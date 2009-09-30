@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Rose-ObjectX-CAF
-version:            0.01
+version:            0.02
 abstract:           Class::Accessor::Fast compatability for Rose::Object
 author:
     - Peter Karman <karman@cpan.org>

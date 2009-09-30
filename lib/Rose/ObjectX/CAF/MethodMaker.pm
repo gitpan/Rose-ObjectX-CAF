@@ -5,7 +5,7 @@ use Carp;
 use base qw( Rose::Object::MakeMethods::Generic );
 my $Debug = 0;    #$ENV{PERL_DEBUG};
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 

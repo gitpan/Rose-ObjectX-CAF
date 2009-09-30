@@ -5,7 +5,7 @@ use base qw( Rose::Object );
 use Carp;
 use Rose::ObjectX::CAF::MethodMaker;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
@@ -22,7 +22,7 @@ Rose::ObjectX::CAF - Class::Accessor::Fast compatability for Rose::Object
  
 =head1 DESCRIPTION
 
-Rose::ObjectX::CAF is a compatability later for Class::Accessor::Fast users who
+Rose::ObjectX::CAF is a compatability layer for Class::Accessor::Fast users who
 want to migrate to Rose::Object.
 
 As evidenced in L<App::Benchmark::Accessors>, 
@@ -45,7 +45,8 @@ and no other changes should be necessary.
 
 =head2 new
 
-Works like CAF, but may take an array or array ref of pairs.
+Works like CAF, but may take a hash (the Rose::Object style)
+or hash ref (the CAF style).
 
 =cut
 
