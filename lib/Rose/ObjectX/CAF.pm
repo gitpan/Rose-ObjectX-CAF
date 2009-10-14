@@ -5,7 +5,7 @@ use base qw( Rose::Object );
 use Carp;
 use Rose::ObjectX::CAF::MethodMaker;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 NAME
 
@@ -84,6 +84,9 @@ sub init {
     # rather than call method, since we have read-only methods.
     while (@_) {
         my $method = shift;
+        if (!$self->can($method)) {
+            croak "No such method $method";
+        }
         $self->{$method} = shift;
     }
 
